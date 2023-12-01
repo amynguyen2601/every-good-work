@@ -531,7 +531,7 @@ ul > li{padding-bottom: 1rem;}
 .navbar-nav li.active > a {
     /* background-color: var(--primary); */
     color: var(--gray-0);
-    border-radius: 5px;
+    /* border-radius: 5px; */
     padding-top: 5px;
     padding-bottom: 5px;
     font-weight: bold;
@@ -547,8 +547,9 @@ ul > li{padding-bottom: 1rem;}
 }
 
 .navbar-nav li > a:hover {
-    color: var(--secondary);
+    /* color: var(--secondary); */
     font-weight: bold ;
+    border-bottom: 1px solid var(--secondary)
 }
 .navbar-nav li.donate > a:hover{
     color: var(--gray-0)
