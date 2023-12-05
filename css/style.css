@@ -440,11 +440,8 @@ img {
 .volunteer-match{
     max-width: 80%;
 }
-.brands{
-    width: 30%;
-}
-.brands-2{
-    width: 20%;
+.error-500{
+    max-width: 70%;
 }
 /* END OF IMAGES */
 
@@ -492,6 +489,19 @@ blockquote p:last-of-type::after{
     margin-bottom: 2rem;
     cursor: pointer;
 }
+.error-button {
+    color: var(--white);
+    background-color: var(--secondary);
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 80%;
+    font-weight: bold;
+    border: solid 2px var(--secondary);
+    border-radius: 50px;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
 .second-button{
     color: var(--gray-0);
     padding: 10px 20px;
@@ -506,10 +516,11 @@ blockquote p:last-of-type::after{
 }
 footer .button{
     background-color: var(--white);
-    color: var(--footer);
-    border: 1.5px solid var(--footer);
+    color: var(--secondary);
+    border: 1.5px solid var(--gray-0);
     margin-left: 1rem;
 }
+.error-button:hover,
 .button:hover{
     color: var(--white);
     background-color: var(--secondary);
@@ -522,8 +533,8 @@ footer .button{
 }
 
 footer .button:hover{
-    background-color: var(--footer);
-    border: solid 1.5px var(--footer)
+    background-color: var(--secondary);
+    border: solid 1.5px var(--secondary)
 }
 
 .solidbutton {
@@ -627,7 +638,7 @@ ul > li{padding-bottom: 1rem;}
     display: block;
     overflow: hidden;
     background: url(../images/LOGO.png) no-repeat center/contain transparent;
-    width: 15rem;
+    width: 16rem;
     height: 5rem;
     text-indent: -9999px;
     text-decoration: none;
@@ -693,7 +704,7 @@ ul > li{padding-bottom: 1rem;}
 .navbar-nav li > a:hover {
     /* color: var(--secondary); */
     /* font-weight: bold ; */
-    border-bottom: 1px solid var(--secondary)
+    border-bottom: 2px solid var(--secondary)
 }
 .navbar-nav li.donate > a:hover{
     color: var(--gray-0)
@@ -930,8 +941,8 @@ footer .footer-nav a {
 }
 
 footer .footer-nav a:hover {
-    color: var(--primary-hover);
-    border-bottom-color: var(--primary-hover);
+    color: var(--secondary);
+    border-bottom-color: var(--secondary);
 }
 
 footer .form-group label {
@@ -970,7 +981,7 @@ footer ul{
  }
 
 footer .social-media li > a:hover{
-    color: var(--primary-hover);
+    color: var(--secondary);
 }
 /* End of Footer */
 
@@ -1054,7 +1065,10 @@ footer .social-media li > a:hover{
     .individual-project{
         height: 25vh;
     }
-
+    .navbar-brand {
+        width: 25rem;
+        height: 5rem;
+    }
     .navbar-toggler {
         display: none;
     }
