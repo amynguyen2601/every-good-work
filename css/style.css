@@ -178,6 +178,7 @@ hr.left-divider{
     text-align: center;
     margin-left: -1rem;
     margin-right: -1rem;
+    margin-bottom: 3rem;
     /* border: 1px solid black; */
 }
 .partner-row {
@@ -202,10 +203,10 @@ hr.left-divider{
     align-items: flex-start;
     align-content: flex-start;
     /* padding-left: 2rem; */
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     /* border: 1px black solid; */
 }
-.history{
+.reverse{
     flex-flow: row-reverse wrap;
 }
 .footer-row {
@@ -231,9 +232,11 @@ hr.left-divider{
     width: 30%;
     height: 30%;
 }
-
+.right-padding{
+    display: flex;
+    flex-direction: row-reverse;
+}
 /* IMAGES */
-
 img {
     max-width: 100%;
 }
@@ -319,8 +322,97 @@ img {
     opacity: 0.4;
   }
 
-.event-content,
-.aboutus-content, 
+.thrift-project{
+    position: relative; 
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-image: url('../images/thrift-cover.jpg');
+    background-size: cover;
+    background-position-y: 70%;
+    opacity: 0.4;
+}
+.news-project{
+    position: relative; 
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-image: url('../images/news-cover.jpg');
+    background-size: cover;
+    background-position-y: 35%;
+    opacity: 0.4;
+  }
+  .program-project{
+    position: relative; 
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-image: url('../images/program.jpg');
+    background-size: cover;
+    background-position-y: 65%;
+    opacity: 0.4;
+  }
+
+.partner-project{
+    position: relative; 
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-image: url('../images/partner.jpg');
+    background-size: cover;
+    background-position-y: 75%;
+    opacity: 0.4;
+  }
+
+  .weekend-project{
+    position: relative; 
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-image: url('../images/weekendforgood1.jpg');
+    background-size: cover;
+    background-position-y: 50%;
+    opacity: 0.4;
+  }
+  .semester-project{
+    position: relative; 
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-image: url('../images/semesterservice.jpg');
+    background-size: cover;
+    background-position-y: 75%;
+    opacity: 0.4;
+  }
+  .younglead-project{
+    position: relative; 
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-image: url('../images/young-leading.jpg');
+    background-size: cover;
+    background-position-y: 65%;
+    opacity: 0.4;
+  }
+  .donate-project{
+    position: relative; 
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-image: url('../images/donate.jpeg');
+    background-size: cover;
+    background-position-y: 60%;
+    opacity: 0.4;
+  }
+.page-title,
 .individual-content{
     text-align: center;
     position: absolute;
@@ -345,12 +437,20 @@ img {
     object-fit: cover;
     object-position: center;
 }
-
+.volunteer-match{
+    max-width: 80%;
+}
+.brands{
+    width: 30%;
+}
+.brands-2{
+    width: 20%;
+}
 /* END OF IMAGES */
 
 /* Blockquotes */
 blockquote{
-    font-size: var(--h3-font-size);
+    /* font-size: var(--h3-font-size); */
     text-align: center;
 }
 blockquote p:first-of-type::before{
@@ -373,7 +473,7 @@ blockquote p:last-of-type::after{
 }
 /* End of Blockquotes */
 
-
+/* Button */
 .project-button{
     margin-top: 4rem;
     margin-bottom: 3rem;
@@ -440,9 +540,51 @@ footer .button:hover{
 
 .solidbutton:hover {
     color: var(--gray-0);
-    background-color: var(--primary-hover);
+    background-color: var(--secondary);
+    
 }
 
+.bn632-hover {
+    width: 160px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 5px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:focus {
+    outline: none;
+  }
+  
+  .bn632-hover.bn28 {
+    background-image: linear-gradient(
+      to right,
+      #eb3941,
+      #f15e64,
+      #e14e53,
+      #e2373f
+    );
+    box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
+  }
+/* end of button */
 ul{
     padding-left: 0rem;
     list-style-type:none;
@@ -477,22 +619,23 @@ ul > li{padding-bottom: 1rem;}
     justify-content: space-between;
     align-items: center;
     align-content: flex-start;
-    /* padding: 1rem; */
+    /* padding: 1rem; */ 
+    padding-left: 1rem;
 }
 
 .navbar-brand {
     display: block;
     overflow: hidden;
     background: url(../images/LOGO.png) no-repeat center/contain transparent;
-    width: 8rem;
-    height: 4rem;
+    width: 15rem;
+    height: 5rem;
     text-indent: -9999px;
     text-decoration: none;
-    /* margin-bottom: 1rem; */
+    padding-left: 1rem;
 }
 
 .navbar-toggler {
-    background-color: var(--gray-0);
+    background-color: var(--secondary);
     border: 0 none;
     color: white;
     width: 2rem;
@@ -503,6 +646,7 @@ ul > li{padding-bottom: 1rem;}
     align-items: center;
     align-content: center;
     cursor: pointer;
+    margin-right: 1rem;
 }
 
 .navigation {
@@ -515,7 +659,8 @@ ul > li{padding-bottom: 1rem;}
 
 .navbar-nav {
     list-style-type: none;
-    padding: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .navbar-nav li > a {
@@ -530,7 +675,7 @@ ul > li{padding-bottom: 1rem;}
 
 .navbar-nav li.active > a {
     /* background-color: var(--primary); */
-    color: var(--gray-0);
+    color: var(--secondary );
     /* border-radius: 5px; */
     padding-top: 5px;
     padding-bottom: 5px;
@@ -543,12 +688,11 @@ ul > li{padding-bottom: 1rem;}
     border-radius: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
-    /* font-weight: bold; */
 }
 
 .navbar-nav li > a:hover {
     /* color: var(--secondary); */
-    font-weight: bold ;
+    /* font-weight: bold ; */
     border-bottom: 1px solid var(--secondary)
 }
 .navbar-nav li.donate > a:hover{
@@ -715,13 +859,13 @@ button[class^=carousel-control] {
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    width: 2rem;
+    width: 5rem;
     padding: 0;
-    color: var(--gray-0);
+    color: black;
     background-color: transparent;
     border: 0;
     text-align: center;
-    opacity: 0.5;
+    /* opacity: 0.5; */
     transition: opacity 0.15s ease;
     font-size: 1rem;
 }
@@ -830,6 +974,7 @@ footer .social-media li > a:hover{
 }
 /* End of Footer */
 
+
 /* GRID SYSTEM */
 .col-xs-1{
     max-width: var(--col-1);
@@ -930,7 +1075,7 @@ footer .social-media li > a:hover{
     .dropdown-menu {
         position: absolute;
     }
-
+    .navbar-nav li.donate > a { margin-left: 1rem;}
     footer .copyright { 
         text-align: unset;
     }
@@ -1055,15 +1200,17 @@ footer .social-media li > a:hover{
         margin-right: -1rem;
         height: 400px;
     }
+    .navbar-nav li.donate > a { margin-left: 1rem;}
 
+    .news-project,
+    .thrift-project,
     .event-project,
     .aboutus-project,
     .individual-project{
         height: 25vh;
     }
-    .event-content,
-    .aboutus-content,
-    .individual-content{
+
+   .page-title {
         padding-left: 5rem;
         padding-right: 5rem;
         font-size: larger;
